@@ -1,0 +1,6 @@
+
+<RCC>
+  <qresource prefix="mergezincdatastep">
+    <file>images/registration.png</file>
+  </qresource>
+</RCC>
