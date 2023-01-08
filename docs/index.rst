@@ -1,22 +1,36 @@
-MAP Client Plugin - Merge Zinc Data
-===================================
+Merge Zinc Data
+===============
 
+Overview
+--------
 The **Merge Zinc Data** is MAP Client plugin for merging Zinc data.
 
-.. _fig-mcp-merge-zinc-data-configured-step:
 
-.. figure:: _images/configured-step.png
-   :alt: Configured step icon
+Workflow Connections
+--------------------
 
-   A configured *Merge Zinc Data* step icon.
+As shown in :numref:`fig-mcp-merge-zinc-data-workflow-connections`, the **Merge Zinc Data** uses 2 input:
 
-**Table of contents**
+1. The first input is the dominant Zinc data file. 
+   Data will be merged onto markers obtained from this file. (Port: *https://opencmiss.org/1.0/rdf-schema#file_location*)
 
-* :ref:`hdg-mcp-merge-zinc-data-configure`
-* :ref:`hdg-mcp-merge-zinc-data-ports`
-* :ref:`hdg-mcp-merge-zinc-data-user-interface`
+2. The second input is the recessive Zinc data file.
+   Data from markers in this file will be made available for merging. (Port: *https://opencmiss.org/1.0/rdf-schema#file_location*)
 
-.. _hdg-mcp-merge-zinc-data-configure:
+It produces 1 output which may be piped to other workflow steps:
+
+1. A file after convert. (Port: *https://opencmiss.org/1.0/rdf-schema#file_location*)
+
+
+.. _fig-mcp-merge-zinc-data-workflow-connections:
+
+.. figure:: _images/workflow-connections.png
+   :alt: Merge Zinc Data workflow connections.
+   :align: center
+   :figwidth: 75%
+
+   **Merge Zinc Data** workflow connections.
+
 
 Configure
 ---------
@@ -30,29 +44,6 @@ The only configurable setting for this step is the step identifier.
    :alt: Step configure dialog
 
    *Merge Zinc Data* step configuration dialog.
-
-.. _hdg-mcp-merge-zinc-data-ports:
-
-Ports
------
-
-This plugin:
-
-* **uses**:
-
-  * *https://opencmiss.org/1.0/rdf-schema#file_location*
-  * *https://opencmiss.org/1.0/rdf-schema#file_location*
-
-and
-
-* **provides**:
-
-  * *https://opencmiss.org/1.0/rdf-schema#file_location*
-
-The first **uses** port is the dominant Zinc data file.
-Data will be merged onto markers obtained from this file.
-The second **uses** port is the recessive Zinc data file.
-Data from markers in this file will be made available for merging.
 
 .. _hdg-mcp-merge-zinc-data-user-interface:
 
