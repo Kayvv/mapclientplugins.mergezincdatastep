@@ -1,7 +1,7 @@
 """
 User interface for github.com/OpenCMISS-Bindings/mergedatatozinc
 """
-from PySide2 import QtCore, QtWidgets
+from PySide6 import QtCore, QtWidgets
 
 from mapclientplugins.mergezincdatastep.view.ui_mergezincdatawidget import Ui_MergeZincDataWidget
 
