@@ -37,7 +37,7 @@ readme = readfile("README.rst", split=True)[3:]  # skip title
 # into the 'requirements.txt' file.
 requires = [
     'PySide6',
-    'opencmiss.merger',
+    'cmlibs.merger',
 ]  # minimal requirements listing
 source_license = readfile("LICENSE")
 

@@ -4,7 +4,7 @@ import os.path
 
 from PySide6 import QtCore
 
-from opencmiss.merger.points import Merger, display_field_info
+from cmlibs.merger.points import Merger, display_field_info
 
 
 class MarkerMapModel(QtCore.QAbstractTableModel):
