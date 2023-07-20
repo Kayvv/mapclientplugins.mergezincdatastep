@@ -3,7 +3,7 @@
 MAP Client Plugin - Generated from MAP Client v0.17.0
 """
 
-__version__ = '0.1.1'
+__version__ = '0.2.0'
 __author__ = 'Auckland Bioengineering Institute'
 __stepname__ = 'Merge Zinc Data'
 __location__ = ''
